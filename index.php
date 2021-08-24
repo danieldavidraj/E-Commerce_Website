@@ -1,7 +1,10 @@
 <?php
 // Start the session
 session_start();
-$_SESSION["id"] ="";
+if(!isset($_SESSION["id"]))
+{
+	$_SESSION["id"] ="";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
